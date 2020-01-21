@@ -221,14 +221,14 @@
   -->
   <PropertyGroup Condition=" '$(OFFICIAL_WIX_BUILD)'=='' ">
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)publickey_wix.snk</AssemblyOriginatorKeyFile>
-    <DelaySign>true</DelaySign>
-    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(OFFICIAL_WIX_BUILD)'!='' ">
     <AssemblyOriginatorKeyFile>$(OFFICIAL_WIX_BUILD)</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <BuildSandcastleDocumentation>true</BuildSandcastleDocumentation>
   </PropertyGroup>
 
@@ -242,8 +242,7 @@
   <!-- FxCop settings -->
   <PropertyGroup>
     <FXCOPDIR Condition=" '$(FXCOPDIR)' == '' and Exists('$(EXTERNALROOT)FxCop\')">$(EXTERNALROOT)FxCop\</FXCOPDIR>
-    <FxCopEnabled Condition=" '$(FxCopEnabled)' == '' and '$(Configuration)' == 'Release' ">true</FxCopEnabled>
-    <FxCopEnabled Condition=" '$(FxCopEnabled)' == '' ">false</FxCopEnabled>
+    <FxCopEnabled>false</FxCopEnabled>
     <CodeAnalysisRuleSet Condition=" '$(CodeAnalysisRuleSet)' == '' ">$(WixRoot)tools\Wix.ruleset</CodeAnalysisRuleSet>
     <RunCodeAnalysis Condition=" '$(FxCopEnabled)' == 'true' and ( '$(BuildingInsideVisualStudio)' == 'true' or '$(FXCOPDIR)' != '' )">true</RunCodeAnalysis>
   </PropertyGroup>

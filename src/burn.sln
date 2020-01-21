@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test related", "test related", "{9FF20224-B6C0-4378-BD15-4857EAD6A3DC}"
 	ProjectSection(SolutionItems) = preProject
@@ -307,19 +307,17 @@ Global
 		{EDCB8095-0E6A-43E0-BC33-C4F762FC5CDB}.Template|Win32.Build.0 = Release|Win32
 		{EDCB8095-0E6A-43E0-BC33-C4F762FC5CDB}.Template|x64.ActiveCfg = Release|Win32
 		{EDCB8095-0E6A-43E0-BC33-C4F762FC5CDB}.Template|x86.ActiveCfg = Release|Win32
-		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|arm.ActiveCfg = Debug|arm
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|arm.Build.0 = Debug|arm
-		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|Win32.ActiveCfg = Debug|x86
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|x64.ActiveCfg = Debug|x64
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|x64.Build.0 = Debug|x64
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|x86.ActiveCfg = Debug|x86
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Debug|x86.Build.0 = Debug|x86
-		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|Any CPU.ActiveCfg = Release|x86
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|arm.ActiveCfg = Release|arm
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|arm.Build.0 = Release|arm
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|Mixed Platforms.ActiveCfg = Release|x86
@@ -328,7 +326,8 @@ Global
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|x64.Build.0 = Release|x64
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|x86.ActiveCfg = Release|x86
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Release|x86.Build.0 = Release|x86
-		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Template|Any CPU.ActiveCfg = Release|Any CPU
+		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Template|Any CPU.ActiveCfg = Release|x64
+		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Template|Any CPU.Build.0 = Release|x64
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Template|arm.ActiveCfg = Release|arm
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Template|arm.Build.0 = Release|arm
 		{015AA197-3CEC-4B06-B635-953B1A9619CF}.Template|Mixed Platforms.ActiveCfg = Release|x86
@@ -663,6 +662,9 @@ Global
 		{89A33C9C-92F8-4C9B-9AEC-1980C716A304} = {58F2E4A1-3396-4BC6-8A5F-54329DABD5BF}
 		{31FCC013-485E-487D-89D8-6C19EDCDD9A3} = {03455E2B-EE55-4F32-999E-1EFCEA95CF31}
 		{55CB1042-647B-4347-9876-3EA607AF8DCE} = {03455E2B-EE55-4F32-999E-1EFCEA95CF31}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B81DF0FE-B34C-424C-B42F-3DF0E18C0419}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = burn.vsmdi
